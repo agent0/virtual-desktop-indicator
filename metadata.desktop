@@ -1,14 +1,14 @@
 [Desktop Entry]
-Name=Virtual Screen Indicator Plasmoid
+Name=Virtual Screen Indicator
 Comment=Shows current virtual screen
 Encoding=UTF-8
-Icon=clock
+Icon=monitor
 ServiceTypes=Plasma/Applet
 Type=Service
 X-KDE-PluginInfo-Author=Juergen Lind
 X-KDE-PluginInfo-Email=jli@agentlab.de
-X-KDE-PluginInfo-License=GPL
-X-KDE-PluginInfo-Version=2.0
+X-KDE-PluginInfo-License=MIT
+X-KDE-PluginInfo-Version=1.0
 X-KDE-PluginInfo-Name=de.agentlab.virtual-desktop-indicator
 X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=ui/main.qml
