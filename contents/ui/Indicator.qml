@@ -38,8 +38,8 @@ Item {
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         text: "?"
-        font.family: "Andale Mono"
-        font.pointSize: 20
+        font.family: "Ubuntu Mono"
+        font.pointSize: 19
         font.bold: false
         anchors.fill: parent
     }
