@@ -37,7 +37,7 @@ Item {
         id: indicator
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        text: "?"
+        text: virtualDesktopInfo.currentDesktop
         font.family: "Ubuntu Mono"
         font.pointSize: 19
         font.bold: false
@@ -46,15 +46,7 @@ Item {
     
     TaskManager.VirtualDesktopInfo {
         id: virtualDesktopInfo
-    }
-    
-    PlasmaCore.DataSource {
-        id: dataSource
-        engine: "time"
-        connectedSources: ["Local","UTC"]
-        interval: 500
-
-        onNewData:{
+        onCurrentDesktopChanged:{
             indicator.text = virtualDesktopInfo.currentDesktop;
         }
     }
