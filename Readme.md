@@ -6,7 +6,7 @@ a small widget that just shows the currently active desktop.
  
 After not finding such a widget, I decided to build it myself. The widget has no configuration whatsoever, 
 just add it to the panel and you are good to go. Although it is possible to add the widget to the desktop 
-as well, it is usually of little use since it will hidden behind any other window. Also, the appearance is 
+as well, it is usually of little use since it will be hidden behind any other window. Also, the appearance is 
 currently fixed.
  
 ### Installation
