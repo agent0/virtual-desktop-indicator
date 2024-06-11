@@ -23,27 +23,28 @@
     License along with this plasmoid. If not, see <http://www.gnu.org/licenses/>.
 */
 
-import QtQuick 2.0
+import QtQuick 2.15
 import QtQuick.Layouts 1.1
-import org.kde.plasma.core 2.0 as PlasmaCore
+import org.kde.plasma.core as PlasmaCore
 import org.kde.plasma.plasmoid 2.0
-import org.kde.taskmanager 0.1 as TaskManager
-import org.kde.kwindowsystem 1.0 as KWindowSystem
+import org.kde.taskmanager as TaskManager
+import org.kde.kwindowsystem as KWindowSystem
 
 Item {
     id: mainWindow
-    
+
     Text {
         id: indicator
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         text: virtualDesktopInfo.currentDesktop
+        color: "#d3ddd7"
         font.family: "Ubuntu Mono"
-        font.pointSize: 19
+        font.pointSize: 16
         font.bold: false
         anchors.fill: parent
     }
-    
+
     TaskManager.VirtualDesktopInfo {
         id: virtualDesktopInfo
         onCurrentDesktopChanged:{

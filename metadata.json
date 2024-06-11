@@ -1,0 +1,20 @@
+{
+  "KPlugin": {
+    "Authors": [
+      {
+        "Email": "jli@agentlab.de",
+        "Name": "Juergen Lind"
+      }
+    ],
+    "Description": "Shows current virtual desktop",
+    "Icon": "monitor",
+    "Id": "de.agentlab.virtual-desktop-indicator",
+    "License": "MIT",
+    "Name": "Virtual Desktop Indicator",
+    "KPackageStructure": [
+      "Plasma/Applet"
+    ],
+    "Version": "1.0"
+  },
+  "X-Plasma-API-Minimum-Version": "6.0"
+}
