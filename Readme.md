@@ -31,13 +31,9 @@ currently fixed.
 > plasmapkg2 -r .  # remove
 ```
 
-* test in plasmoidviewer
-
-```
-> plasmoidviewer --applet .
-```
-
-* restart PLASMA shell to reload changes
+* Restart PLASMA shell to reload changes
 ```
 > killall plasmashell; kstart5 plasmashell
 ```
+
+* If the widget is not shown, copy manually from `.local/kpackage/generic/` to `.local/share/plasma/plasmoids/`
