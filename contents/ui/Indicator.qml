@@ -37,7 +37,7 @@ Item {
         id: indicator
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        text: virtualDesktopInfo.currentDesktop
+        text: ""
         color: "#d3ddd7"
         font.family: "Ubuntu Mono"
         font.pointSize: 16
@@ -48,7 +48,12 @@ Item {
     TaskManager.VirtualDesktopInfo {
         id: virtualDesktopInfo
         onCurrentDesktopChanged:{
-            indicator.text = virtualDesktopInfo.currentDesktop;
+            for (let i = 0; i < virtualDesktopInfo.desktopIds.length; i++) {
+                let desktopId = virtualDesktopInfo.desktopIds[i]
+                if (desktopId == virtualDesktopInfo.currentDesktop){
+                    indicator.text = i+1;
+                }
+            }
         }
     }
 }
